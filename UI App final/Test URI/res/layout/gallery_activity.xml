@@ -1,0 +1,59 @@
+<!-- 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/hello_world"
+        tools:context=".GalleryActivity" />
+
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="109dp" />
+
+</RelativeLayout>
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="5dp"
+    	android:text="@string/select_intro"
+    	android:gravity="center"
+    	android:textStyle="bold" />
+    
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="clip_vertical"
+        android:fadingEdge="horizontal" />
+    
+    <TextView 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:padding="5dp"
+    	android:textStyle="italic"
+    	android:text="@string/show_intro" />
+    
+    <ImageView
+	    android:id="@+id/picture"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:contentDescription="@string/picture" />
+</LinearLayout>
